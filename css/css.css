@@ -29,7 +29,8 @@ img.foto {
     margin-right: 5%;
 }
 .bgcontent {
-    min-height: 90vh;
+    padding-top: 5%;
+    min-height: 100vh;
     position: relative;
 }
 a {
@@ -50,13 +51,31 @@ h3 {
     border-top: 4px solid #f7c52f !important;
 }
 .boton{
+    background: linear-gradient(to left, #01557d 50%,  #f7c52f 50%) no-repeat left / 200%;
+    transition: background-position .3s ease;
     border: 1px solid #ffffff;
     padding: 10px;
-    background-color: #f7c52f;
     color: #ffffff;
     font-family: 'Varela Round', sans-serif;
     border-radius: 50px !important;
 
+}
+.boton:hover{
+    background-position: right;
+}
+
+.botondos {
+    background: linear-gradient(to left, #f7c52f 50%,  transparent  50%) no-repeat left / 200%;
+    transition: background-position .3s ease;
+    border: 1px solid #f7c52f;
+    padding: 10px;
+    color: #f7c52f;
+    font-family: 'Varela Round', sans-serif;
+    border-radius: 50px !important;
+}
+.botondos:hover{
+    background-position: right;
+    color: #ffffff;
 }
 
 
@@ -111,6 +130,13 @@ h3 {
     border: none;
     border-top: 4px solid #f7c52f !important;
 }
+.hrt {
+    margin-top: 2% !important;
+    margin-bottom: 1;
+    margin-left: 0px !important;
+    border: none;
+    border-top: 4px solid #f7c52f !important;
+}
 
 .offer {
 
@@ -146,14 +172,6 @@ img.card-img-top {
     padding-top: 75px;
     padding-bottom: 45px;
 }
-.botondos {
-    border: 1px solid #f7c52f;
-    padding: 10px;
-    background-color: #ffffff;
-    color: #f7c52f;
-    font-family: 'Varela Round', sans-serif;
-    border-radius: 50px !important;
-}
 
 
 
@@ -179,7 +197,7 @@ img.card-img-top {
     margin-left: 15%;
     background: white;
     border-radius: 99%;
-    margin-right: 15%;
+    margin-right: 22%;
 
 }
 
@@ -209,6 +227,30 @@ img.rounded-circle.top {
         border-radius: 99%;
         margin-right: 30%;
     }
+    .bgcontent {
+        padding-top: 30%;
+      
+    }
+    
+  }
+  @media (max-width: 778px) {
+  
+    .hrone {
+        display: none;
+    }
+    .hrtwo {
+        display: none;
+    }
+    h2.display-4 {
+        display: none;
+    }
+    h2.display-5 {
+        display: none;
+    }
+    p.h3 {
+        display: none
+        ;
+    }
     
   }
 
@@ -217,6 +259,7 @@ h4.card-text.h4 {
     font-weight: 500;
 
 }
+
 
 
 /***** *  Content #7 * *******/
@@ -268,4 +311,25 @@ ul.list-group li {
     padding-bottom: 10px;
 }
 
+.fa-brands, .fab {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+    font-size: 1.55em;
 
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-brand {
+    margin-bottom: 0px;
+    display: inline-block;
+    padding-top: 0px;
+    margin-right: 1rem;
+    font-size: 1.55rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
